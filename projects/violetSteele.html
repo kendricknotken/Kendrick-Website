@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Violet Steele - Kendrick Tran</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+<!-- Header -->
+	<section id="header" class="wrapper">
+
+		<!-- Logo -->
+			<div id="logo">
+				<h1>Violet Steele</h1>
+			</div>
+
+		<!-- Nav -->
+			 <nav id="nav">
+                                <ul>
+                                        <li class="current"><a href="../index.html">Home</a></li>
+                                        <li><a href="../projects.html">Projects</a></li>
+                                        <li><a href="../experience.html">Experience</a></li>
+                                        <li><a href='../Resume_TranKendrick.pdf' target='blank'>Resume</a></li>
+                                        <li> <a href='https://www.linkedin.com/in/kendrickvtran/' target='_blank'>Linked-In</a> </li>
+                                        <li> <a href='mailto: kendricknotken@gmail.com' >Email</a> </li>
+					<li><a href="aboutMe.html">About Me</a></li> 
+                               </ul>
+                        </nav>
+	</section>
+
+<!-- Main -->
+	<div id="main" class="wrapper style2">
+		<div class="container">
+
+			<!-- Content -->
+				<div id="content">
+				<article class="box post">
+					<header class="style1">
+					         	<h2><a href="#Level Design">Level Design</a> | 
+							<a href="#Game Design">Game Design</a> |
+							<a href="#Environmental Design">Environmental Design</a> |
+							<a href="#Puzzle Design">Puzzle Design</a></h2>
+					</header>
+			
+					<!-- Image	
+					<a href="https://leunarie.itch.io/violet-steele" target="_blank" class="image featured">
+					<img src="../images/Violet Steele, Storage Room.png" alt="Screenshot of the storage room area" />
+					</a>
+					-->
+					
+					<!-- Details -->				
+					<center>
+						<p> <strong> Duration: </strong> Jaunary 2023 - Ongoing <br>
+						<strong> Team Size: </strong> 5 <br>
+						<strong> Tools: </strong> UE5, Github, Trello<br>
+						<strong> Itch.io </strong> <a href="https://leunarie.itch.io/violet-steele" target="_blank">Violet Steele Itch Page</a><br>
+						
+							<!-- Teammates -->
+							<strong> The Team: </strong> 
+								<a href="https://www.linkedin.com/in/tcschmitt/" target="_blank">Tyler Schmitt</a>, 
+								<a href="https://www.linkedin.com/in/kathykxiao/" target="_blank">Kathy Xiao</a>, 
+								<a href="https://www.linkedin.com/in/christian-hsieh-c384/" target="_blank">Christian Hsieh</a>,
+								<a href="https://www.linkedin.com/in/jonathan-c-jackson/" target="_blank">Jonathan Jackson</a>
+						</p>
+					</center>	
+						<!-- Description -->
+						<p> <strong> Description: </strong> Violet Steele is a third-person action adventure stealth game set in the steampunk country of Novellia.
+						Once a peaceful and flourishing country, Novellia is now under a hostile takeover by the Hex Alliance due to the abuse of robots fueled by
+						the revolutionary invention of electricity. </p>
+
+						<p>Play as Violet, the only citizen of Novellia who knows the truth: her father is the engineer who invented electricity, and he was killed
+						by the Hex Alliance for his desire to share his discovery with the people to better their standard of living. Embark on a dangerous mission 
+						to infiltrate the Hex Alliance headquarters with one goal in mind: retrieve the blueprints and fulfil her late father's final wish. But be
+						warned, ruthless robots lurk around every corner, and the path ahead is fraught with peril.</p>
+						<br>
+				</article>
+				</div>
+
+		<!-- Level Design -->
+		<header class="style1">
+		<h2 id="Level Design">Level Design</h2>
+		</header>
+	
+		<p> As the team's only Level Designer I was tasked with creating every level and using what gameplay mechanics we implemented to create space for the player to explore and play. </p>
+
+		<p> I created <b> two levels </b> comprised of multiple sections. Level 1 included the <b>Square</b> and <b>Basement</b>. Level 2 included the <b>Undercroft, Lobby, Bridge, and Top.</b>
+
+		<p> Before prototyping, I needed to understand the scope of the project, narrative of our game, gameplay mechanics, gameplay loop, and our pillars. </p>
+
+		<p> My process for creating maps started with paper sketches, to 2D drawings, and then to gray box in the engine </p> 
+			
+			<!-- Square -->
+			<h2> Square </h2>
+			<p> My first sketch of the square has the player start in the bottom corner of the map where they will begin to navigate the space as they choose.
+			The goal is for the player to enter the Main building, but the player quickly learns the straight path is blocked after they see that buildings of interests are being guarded by robots. 
+			The square would also serve as a playground for learning the basic mechanics of the game such as movement or the scan. 
+			</p>
+			
+				<ul>
+					<li> While there are enemies in the Square they did not pose any threat, and any interaction with them would only give the player clue to the lore. </li>
+				</ul>
+
+			<center>
+				<img src="images/Square Sketch 1.jpg" alt="First sketch of the Square" width="300"/>
+				<img src="images/Square 1.JPG" alt="Current iteration of the Square" width="700"/> <br>
+				<strong> First sketch of the square, and the current iteration of the Square </strong>
+			</center>
+
+			<p> Originally, I had decided that it would be up to the player to decide how they entered the "Main" building (AKA, Level 2, the building at the very top marked with 5 enemies). 
+			They could do this by entering the front door after turning off the electricity (Which is done by entering the basement - 8th Building)
+			that powered the guards, or by sneaking around and entering through a side entrance that rested in an alleyway between the Main building and Building 2. </p>
+
+			<p> However, after reviewing with my team I decided to connect the two sections by having the basement turn on an electric gate that allowed the player to enter the alleyway and
+			reach the side entrance. This would completely eliminate the front door as an option to enter the Main building. </p>
+
+				<ul>
+					<li> The reason I did this is because I didn't want any space to be "wasted." While it is extremely fun for players to have choice I also recognized that players
+					 would be locked out of exploring parts of the map had they chosen one option over the other. </li>
+					<li>  Not to mention this was a Capstone Project and I wanted whoever was playing our game to be able to experience everything my teammates had put together.
+					Not combining the sections would mean that certain 3D assets, original sounds, or gameplay would be missed by the player. So work my teammates did would undoubtly
+					go unrecognized. </li>
+
+				</ul>
+				
+			<!-- Basement -->
+			<h2> Basement </h2>
+			
+			<p> I must admit that the very first sketch I did of the basement was during class and I frantically hashed out my idea on the paper so I would not forget. The idea to
+			have large rows filled with pipes that went straight up and to the ceiling, to show that this area was used to send out energy to the surrounding areas. This
+			would also serve as the area the player would first interact with an enemy as well as their first puzzle. </p>
+
+			<p>However this version of the basement had clear problems. The space was too tight and the player had a difficult time navigating where to go.
+			I wanted it to feel real, like a room could have been really used and built like this, but I also wanted it to be fun so I worked to find a balance. </p>
+				
+			<center>
+				<img src="images/Basement Sketch .jpg" alt="First sketch of the Square" width="300"/>
+				<img src="images/Basement 1.JPG" alt="Current iteration of the Square" width="700"/> <br>
+				<strong> First sketch of the basement, and the current iteration of the basement </strong>
+			</center>
+			<br>
+
+			<p> <strong> One of the biggest hurdles </strong> I faced this project was working on the basement, I was really stuck on trying to make something "real" but fun.
+			 But I remembered why I adored steampunk, it was chaotic. Structure was an after thought in this world, and the people who lived in it prioritized
+			 themselves over their environment. So I structured the pipes in all sorts of directions, almost like I didn't care. </p>
+
+			<center>	
+				<img src="images/Basement 3.JPG" alt="First iteration of the Basement" width="500"/>
+				<img src="../images/Violet Steele, Basement.png" alt="Current iteration of the Basement" width="500"/> <br>
+				<img src="images/Basement 4.JPG" alt="First iteration of the Basement" width="500"/>
+				<img src="images/Basement 5.JPG" alt="First iteration of the Basement" width="500"/> <br>
+				<strong> First iteration of the Basement (Top Left), Current iteration of the basement (Other Three) </strong>
+			</center>
+			<br>
+
+			<p> Through many iterations and playtests I was finally satisfied with how the basement turned out. It had a fun puzzle, and fun space to navigate. </p>			
+			<ul>
+				<li> I learned that what seems like it may work on paper does not mean it will work in execution </li>
+				<li> It was only through accepting and admitting that my first design was a bad design that I was able to move past it and make a much better level </li>
+			</ul>
+
+		<!-- Game Design -->
+		 <header class="style1">
+                <h2 id="Game Design">Game Design</h2>
+                </header>
+                <a href="#" class="image featured"><img src="" alt="" /></a>
+	
+		<p> As the Game Designer I helped design <b> all the gameplay mechanics </b> that were to be implemented into our game. </p>
+
+		<p> The goal with these systems is to give the player a number of tools to stealth through each level the way they want to. </p>		
+	
+		<!-- Environmental Design -->
+		 <header class="style1">
+                <h2 id="Environmental Design">Environmental Design</h2>
+                </header>
+                <a href="#" class="image featured"><img src="" alt="" /></a>
+
+		<p> With level design, comes aspects of environmental design and world building. So it was up to me to build a world that reflected the narrative of our game as well as the mood. </p>
+
+		<p> In the "Square" I had one section of the space very crowded with pipes and evidence of life.
+		This reflected the way of life for the people who lived here as they were still reliant on steam as well as each other to live.
+		While the richer area had significantly less pipes, which reflected their move away from steam and towards electricity. </p>
+
+		<!-- Puzzle Design -->
+		 <header class="style1">
+                <h2 id="Puzzle Design">Puzzle Design</h2>
+                </header>
+                <a href="#" class="image featured"><img src="" alt="" /></a>
+
+		<p> In Progess </p>
+		</div>
+		</div>
+
+				<!-- Other
+					<div class="col-4 col-12-medium">
+						<section class="highlight">
+							<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+							<h3><a href="#">Mattis tempus lorem</a></h3>
+								<p> <strong> Duration: </strong> Jaunary 2023 - Ongoing </br>
+                                                                <strong> Team Size: </strong> 5 </br>
+                                                                <strong> Tools: </strong> UE5, Github, Trello</br>
+                                                                <strong> Roles: </strong> Level Designer, Game Designer, Environmental Designer, Puzzle Designer</p>
+							
+								<!- Link to More ->	
+								<ul class="actions">
+									<li><a href="#" class="button style1">More</a></li>
+								</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+					-->
+		</section>
+
+	<!-- Footer -->
+		<!-- Quick Links -->
+                <section id="footer" class="wrapper style2">
+
+                <center><h2>Quick Links </h2>
+                                <div class="feature-list small">
+                                <div class="row">
+
+                                        <div class="col-6 col-12-small">
+                                                <section>
+                                                        <h3> Pages </h3>
+                                                        <p> <a href='index.html'>Home</a> </p>
+                                                        <p> <a href='projects.html'>Projects</a> </p>
+                                                        <p> <a href='experience.html'>Experience</a> </p>
+                                                        <p> <a href='Resume_TranKendrick.pdf' target='blank'>Resume</a> </p>
+                                                        <p> <a href='https://www.linkedin.com/in/kendrickvtran/' target='_blank'>Linked-In</a> </p>
+                                                        <p> <a href='mailto: kendricknotken@gmail.com' >Email</a> </p>
+                            				<p> <a href="aboutMe.html">About Me</a> </p>
+				                </section>
+                                        </div>
+
+                                        <div class="col-6 col-12-small">
+                                                <section>
+                                                        <h3> Projects </h3>
+                                                        <p> <a href='violetSteele.html'>Violet Steele</a> </p>
+                                                </section>
+                                        </div>
+                                </div>
+                                </div>
+		</center>
+                        <!-- Copyright -->
+                        <div id="copyright">
+                                <ul>
+                                        <li>&copy; Kendrick Tran.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                </ul>
+                        </div>
+                </section>
+</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
